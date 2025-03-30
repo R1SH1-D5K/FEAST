@@ -1,0 +1,91 @@
+version: "3.1"
+
+stories:
+
+- story: search recipe path
+  steps:
+    - intent: search_recipe
+    - action: action_search_recipes
+
+- story: ask for recipes path
+  steps:
+    - intent: ask_for_recipes
+    - action: action_search_recipes
+
+- story: clear preferences path
+  steps:
+    - intent: clear_preferences
+    - action: action_clear_preferences
+
+- story: list cuisines path
+  steps:
+    - intent: list_cuisines
+    - action: utter_available_cuisines
+
+- story: list diets path
+  steps:
+    - intent: list_diets
+    - action: utter_available_diets
+
+- story: greeting path
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: happy path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+
+- story: sad path 1
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: sad path 2
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_goodbye
+
+- story: User asks for recipes after greeting
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_for_recipes
+    - action: action_search_recipes
+
+- story: User asks for recipes then asks for more specific recipes
+  steps:
+    - intent: ask_for_recipes
+    - action: action_search_recipes
+    - intent: ask_for_recipes
+    - action: action_search_recipes
+
+- story: User asks for recipes then clears preferences
+  steps:
+    - intent: ask_for_recipes
+    - action: action_search_recipes
+    - intent: clear_preferences
+    - action: action_clear_preferences
+
+- story: User says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: User asks if bot
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot

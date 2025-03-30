@@ -1,0 +1,33 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to search_recipe intent
+  steps:
+  - intent: search_recipe
+  - action: action_search_recipes
+
+- rule: Respond to ask_for_recipes intent
+  steps:
+  - intent: ask_for_recipes
+  - action: action_search_recipes
+
+- rule: Clear preferences when requested
+  steps:
+  - intent: clear_preferences
+  - action: action_clear_preferences
+
+- rule: Test action
+  steps:
+  - intent: test_action
+  - action: action_test

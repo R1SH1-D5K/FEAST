@@ -1,0 +1,7 @@
+version: "3.1"
+
+regex:
+  - name: ingredient
+    pattern: "\\b(chicken|beef|pork|fish|pasta|rice|tomato|potato|carrot|onion|garlic|cheese)\\b"
+  - name: cuisine
+    pattern: "\\b(Italian|Indian|Chinese|Mexican|Thai|Japanese|French)\\b" 

@@ -1,0 +1,6 @@
+rasa==3.6.2
+pymongo==4.3.3
+pandas==1.5.3
+scikit-learn==1.2.2
+fastapi==0.95.1
+uvicorn==0.22.0 

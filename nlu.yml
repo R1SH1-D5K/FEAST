@@ -1,0 +1,646 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey there
+    - hi there
+    - greetings
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you around
+    - see you later
+    - have a nice day
+    - catch you later
+    - until next time
+    - bye bye
+    - have a good one
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_for_recipes
+  examples: |
+    - What can I cook with [chicken](ingredient)?
+    - What [Italian](cuisine) dishes can I make?
+    - What are some good [vegetarian](diet) recipes?
+    - What [desserts](course) can I prepare?
+    - What are some [quick](time) meal ideas?
+    - What [breakfast](course) options do you have?
+    - What [Mexican](cuisine) food can I cook?
+    - What can I make without [nuts](exclude_ingredient)?
+    - What are some [gluten-free](diet) options?
+    - What [dinner](course) recipes do you recommend?
+    - What can I cook with [pasta](ingredient)?
+    - What [vegan](diet) dishes are there?
+    - What are some [easy](time) recipes?
+    - What [Chinese](cuisine) food can I make at home?
+    - What can I prepare with [rice](ingredient)?
+    - What [dairy-free](diet) options do you have?
+    - What are some [low-carb](diet) recipes?
+    - What [lunch](course) ideas can you suggest?
+    - What can I make with [tomatoes](ingredient)?
+    - What [Thai](cuisine) dishes are popular?
+    - What are some recipes without [onions](exclude_ingredient)?
+    - What [spicy](taste) food can I cook?
+    - What [sweet](taste) treats can I make?
+    - What are some [savory](taste) options?
+    - What [tangy](taste) dishes do you recommend?
+    - What can I cook that's [healthy](diet)?
+    - What [Indian](cuisine) food is easy to make?
+    - What are some dishes with [basil](ingredient)?
+    - What can I make that doesn't have [garlic](exclude_ingredient)?
+    - What [quick](time) [pasta](ingredient) dishes can I make?
+    - What are some [vegetarian](diet) [Italian](cuisine) recipes?
+    - What [gluten-free](diet) [desserts](course) do you recommend?
+    - What can I cook with [chicken](ingredient) and [rice](ingredient)?
+    - What [vegan](diet) [breakfast](course) options are there?
+    - What [dairy-free](diet) [Italian](cuisine) dishes can I make?
+    - What are some [low-carb](diet) meals with [chicken](ingredient)?
+    - What [quick](time) [dinner](course) ideas do you have?
+    - What can I make with [tomatoes](ingredient) and [basil](ingredient)?
+    - What [Mexican](cuisine) food without [spicy](taste) ingredients?
+    - What are some [desserts](course) without [nuts](exclude_ingredient)?
+    - I don't eat [dairy](diet)
+    - Something without [gluten](diet)
+    - Recipes that don't have [nuts](exclude_ingredient)
+    - Meals ready in [under 30 minutes](time)
+    - [Hot](taste) and [spicy](taste) dishes
+
+- intent: clear_preferences
+  examples: |
+    - Clear my preferences
+    - Reset my dietary preferences
+    - Forget my diet restrictions
+    - Start over with recipe search
+    - Remove my filters
+    - Clear all my recipe filters
+    - I want to start fresh
+    - Reset everything
+    - Clear my diet settings
+    - Forget what I told you about my diet
+    - Remove my cuisine preference
+    - I want to change my preferences
+    - Start a new recipe search
+    - clear preference
+    - clear preferences
+    - reset
+    - start over
+    - forget everything
+    - new search
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - ok
+    - okay
+    - sounds good
+    - that's right
+    - that's correct
+    - i agree
+    - perfect
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nope
+    - not interested
+    - no thanks
+    - I'll pass
+    - I'd rather not
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling good
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I'm good
+
+- intent: mood_unhappy
+  examples: |
+    - sad
+    - very sad
+    - unhappy
+    - bad
+    - very bad
+    - awful
+    - terrible
+    - not very good
+    - extremely sad
+    - so sad
+
+- intent: search_recipe
+  examples: |
+    - I want [vegetarian](diet) [pasta](ingredient) recipes
+    - Show me [vegan](diet) [Mexican](cuisine) dishes
+    - I'm looking for [gluten-free](diet) [breakfast](course) ideas
+    - Give me [Italian](cuisine) [dinner](course) recipes
+    - I need [quick](time) [lunch](course) recipes
+    - Show me [easy](time) [dessert](course) recipes
+    - I want to make [Chinese](cuisine) food
+    - Give me recipes with [chicken](ingredient)
+    - I'm looking for [Indian](cuisine) [vegetarian](diet) recipes
+    - Show me [dairy-free](diet) [dessert](course) options
+    - I want [low-carb](diet) [dinner](course) ideas
+    - Give me [quick](time) recipes with [rice](ingredient)
+    - I need [easy](time) [breakfast](course) ideas
+    - Show me [vegan](diet) [Italian](cuisine) dishes
+    - I want [gluten-free](diet) [Mexican](cuisine) food
+    - Give me [vegetarian](diet) [lasagna](ingredient) recipes
+    - I'm looking for recipes with [tomatoes](ingredient) and [basil](ingredient)
+    - Show me [Thai](cuisine) food without [peanuts](exclude_ingredient)
+    - I want [desserts](course) without [nuts](exclude_ingredient)
+    - Give me [quick](time) [pasta](ingredient) dishes
+    - I need [easy](time) [vegan](diet) [breakfast](course) ideas
+    - Show me [Chinese](cuisine) [vegetarian](diet) recipes
+    - I want [gluten-free](diet) [desserts](course)
+    - Give me [dairy-free](diet) [breakfast](course) recipes
+    - I'm looking for [chicken](ingredient) [curry](ingredient) recipes
+    - Show me [vegetarian](diet) [pizza](ingredient) recipes
+    - I want [quick](time) [dinner](course) ideas with [rice](ingredient)
+    - Give me [Italian](cuisine) [dessert](course) recipes
+    - I need [healthy](diet) [lunch](course) options
+    - Show me [spicy](taste) [Thai](cuisine) food
+    - I want [sweet](taste) [desserts](course)
+    - Give me [savory](taste) [breakfast](course) ideas
+    - I'm looking for [tangy](taste) [salad](course) recipes
+    - Show me recipes without [onions](exclude_ingredient)
+    - I want dishes without [garlic](exclude_ingredient)
+    - Give me recipes that don't have [dairy](exclude_ingredient)
+    - I need meals without [gluten](exclude_ingredient)
+    - Show me [vegetarian](diet) [lasagna](ingredient) recipe
+    - I want [gluten-free](diet) [Indian](cuisine) food
+    - Give me some [vegan](diet) [Mexican](cuisine) dishes
+    - I'm looking for [chicken](ingredient) recipes
+    - What [Italian](cuisine) [desserts](course) can I make?
+    - [Quick](time) [dinner](course) ideas with [rice](ingredient)
+    - [Dairy-free](diet) [breakfast](course) recipes
+    - [Spicy](taste) [Thai](cuisine) food without [peanuts](exclude_ingredient)
+    - [Low-carb](diet) [dinner](course) ideas
+    - [Vegetarian](diet) [lasagna](ingredient) recipe
+    - I need a [quick](time) [pasta](ingredient) dish
+    - Show me [Chinese](cuisine) [vegetarian](diet) recipes
+    - Recipes with [tomatoes](ingredient) and [basil](ingredient)
+    - [Gluten-free](diet) [desserts](course) without [nuts](exclude_ingredient)
+    - [Easy](time) [vegan](diet) [breakfast](course) ideas
+
+- intent: list_cuisines
+  examples: |
+    - what cuisines do you have?
+    - show me all cuisines
+    - what types of food can I search for?
+    - list available cuisines
+    - what cuisine options are there?
+
+- intent: list_diets
+  examples: |
+    - what diets do you support?
+    - show me dietary options
+    - what dietary restrictions can I specify?
+    - list available diets
+    - what diet types can I search for?
+
+- intent: test_action
+  examples: |
+    - test action
+    - run test
+    - action test
+
+# Lookup tables for better entity recognition
+lookup_tables:
+  - name: ingredient
+    elements:
+      - pasta
+      - rice
+      - chicken
+      - beef
+      - pork
+      - fish
+      - shrimp
+      - tofu
+      - beans
+      - lentils
+      - chickpeas
+      - potatoes
+      - sweet potatoes
+      - carrots
+      - broccoli
+      - spinach
+      - kale
+      - lettuce
+      - tomatoes
+      - onions
+      - garlic
+      - ginger
+      - bell peppers
+      - mushrooms
+      - zucchini
+      - eggplant
+      - cauliflower
+      - corn
+      - peas
+      - green beans
+      - asparagus
+      - cabbage
+      - brussels sprouts
+      - avocado
+      - cucumber
+      - radish
+      - beets
+      - squash
+      - pumpkin
+      - apples
+      - bananas
+      - oranges
+      - lemons
+      - limes
+      - strawberries
+      - blueberries
+      - raspberries
+      - blackberries
+      - grapes
+      - watermelon
+      - cantaloupe
+      - pineapple
+      - mango
+      - peaches
+      - pears
+      - plums
+      - cherries
+      - kiwi
+      - coconut
+      - nuts
+      - almonds
+      - walnuts
+      - pecans
+      - cashews
+      - peanuts
+      - seeds
+      - chia seeds
+      - flax seeds
+      - sunflower seeds
+      - pumpkin seeds
+      - sesame seeds
+      - quinoa
+      - couscous
+      - bulgur
+      - farro
+      - barley
+      - oats
+      - flour
+      - bread
+      - tortillas
+      - pasta
+      - noodles
+      - rice
+      - milk
+      - cream
+      - yogurt
+      - cheese
+      - butter
+      - eggs
+      - oil
+      - vinegar
+      - soy sauce
+      - hot sauce
+      - ketchup
+      - mustard
+      - mayonnaise
+      - honey
+      - maple syrup
+      - sugar
+      - chocolate
+      - vanilla
+      - cinnamon
+      - cumin
+      - paprika
+      - oregano
+      - basil
+      - thyme
+      - rosemary
+      - sage
+      - mint
+      - cilantro
+      - parsley
+      - dill
+      - chives
+      - bay leaves
+      - salt
+      - pepper
+      - lasagna
+      - pizza
+      - curry
+      - salsa
+      - guacamole
+      - hummus
+      - pesto
+      - marinara
+      - alfredo
+      - teriyaki
+      - barbecue
+      - sriracha
+
+  - name: cuisine
+    elements:
+      - Italian
+      - Indian
+      - Chinese
+      - Mexican
+      - Thai
+      - Japanese
+      - French
+      - Spanish
+      - Greek
+      - Mediterranean
+      - American
+      - Korean
+      - Vietnamese
+      - Middle Eastern
+      - Turkish
+      - Lebanese
+      - Moroccan
+      - Brazilian
+      - Caribbean
+      - Ethiopian
+
+  - name: diet
+    elements:
+      - vegetarian
+      - vegan
+      - gluten-free
+      - gluten free
+      - dairy-free
+      - dairy free
+      - low-carb
+      - low carb
+      - keto
+      - ketogenic
+      - paleo
+      - pescatarian
+      - low-fodmap
+      - low fodmap
+      - nut-free
+      - nut free
+      - egg-free
+      - egg free
+      - soy-free
+      - soy free
+      - high-protein
+      - high protein
+      - low-fat
+      - low fat
+      - sugar-free
+      - sugar free
+
+  - name: course
+    elements:
+      - breakfast
+      - lunch
+      - dinner
+      - brunch
+      - appetizer
+      - starter
+      - main course
+      - main dish
+      - side dish
+      - dessert
+      - snack
+      - soup
+      - salad
+      - drink
+      - beverage
+
+  - name: time
+    elements:
+      - quick
+      - easy
+      - simple
+      - fast
+      - 5-minute
+      - 10-minute
+      - 15-minute
+      - 20-minute
+      - 30-minute
+      - under 30 minutes
+      - under 15 minutes
+      - one-pot
+      - one pot
+      - no-cook
+      - no cook
+      - slow cooker
+      - instant pot
+      - make-ahead
+      - make ahead
+
+# Add this at the end of your nlu.yml file
+regex:
+  - name: diet
+    pattern: "(vegetarian|vegan|gluten-free|dairy-free|low-carb)"
+  
+  - name: cuisine
+    pattern: "(Italian|Chinese|Mexican|Indian|Thai|Japanese)"
+
+# New synonym definitions
+- synonym: spicy
+  examples: |
+    - spicy
+    - hot
+    - fiery
+    - peppery
+    - zesty
+
+- synonym: quick
+  examples: |
+    - quick
+    - fast
+    - rapid
+    - speedy
+    - under 30 minutes
+    - less than an hour
+
+- name: time_constraint
+  pattern: "\\b(under|less than) (\\d+) (minutes|hours|mins)\\b"
+
+- name: negation
+  pattern: "\\b(without|no|don't|not|exclude|excluding)\\b"
+
+def search_recipes(preferences):
+    # Base query
+    query = {}
+    
+    # Add filters based on preferences
+    if preferences.get("diet"):
+        query["diet"] = preferences["diet"]
+    
+    if preferences.get("cuisine"):
+        query["cuisine"] = preferences["cuisine"]
+    
+    if preferences.get("ingredient"):
+        # Use $all to match multiple ingredients
+        query["ingredients"] = {"$all": [preferences["ingredient"]]} 
+    
+    if preferences.get("exclude_ingredient"):
+        # Use $nin to exclude ingredients
+        query["ingredients"] = {"$nin": [preferences["exclude_ingredient"]]}
+    
+    # Handle too many results
+    results = list(collection.find(query).limit(10))
+    
+    # If too few results, relax constraints
+    if len(results) < 3:
+        # Remove the most restrictive constraint
+        if "ingredients" in query:
+            del query["ingredients"]
+            results = list(collection.find(query).limit(10))
+    
+    return results
+
+class ActionSearchRecipes(Action):
+    def name(self) -> Text:
+        return "action_search_recipes"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        # Get entities from the user's message
+        diet = tracker.get_slot("diet")
+        cuisine = tracker.get_slot("cuisine")
+        ingredient = tracker.get_slot("ingredient")
+        course = tracker.get_slot("course")
+        time = tracker.get_slot("time")
+        taste = tracker.get_slot("taste")
+        exclude_ingredient = tracker.get_slot("exclude_ingredient")
+        
+        # Construct a more natural response
+        response_parts = []
+        if diet:
+            response_parts.append(f"{diet}")
+        if cuisine:
+            response_parts.append(f"{cuisine} cuisine")
+        if ingredient:
+            response_parts.append(f"with {ingredient}")
+        if exclude_ingredient:
+            response_parts.append(f"without {exclude_ingredient}")
+        if course:
+            response_parts.append(f"for {course}")
+        if time:
+            response_parts.append(f"{time}")
+        if taste:
+            response_parts.append(f"{taste}")
+        
+        if response_parts:
+            response = "I'll find you " + " ".join(response_parts) + " recipes!"
+            dispatcher.utter_message(text=response)
+            
+            # Here you would query your recipe database
+            # For now, return sample recipes based on preferences
+            recipes = [
+                """
+**Classic Tiramisu**
+**Cuisine:** Italian
+**Course:** Dessert
+**Time:** 30 minutes + chilling
+**Ingredients:**
+• 6 egg yolks
+• 3/4 cup white sugar
+• 2/3 cup milk
+• 1 1/4 cups heavy cream
+• 1/2 teaspoon vanilla extract
+• 1 pound mascarpone cheese
+• 1/4 cup strong brewed coffee, room temperature
+• 2 tablespoons rum
+• 2 (3 ounce) packages ladyfinger cookies
+• 1 tablespoon unsweetened cocoa powder
+""",
+                """
+**Vegetarian Lasagna**
+**Cuisine:** Italian
+**Course:** Main Dish
+**Time:** 1 hour
+**Ingredients:**
+• 9 lasagna noodles
+• 4 cups tomato sauce
+• 1 1/2 cups ricotta cheese
+• 4 cups fresh spinach
+• 2 cups sliced mushrooms
+• 2 zucchini, sliced
+• 3 cups shredded mozzarella cheese
+• 2 tablespoons olive oil
+• 3 cloves garlic, minced
+• 1 teaspoon dried basil
+• Salt and pepper to taste
+""",
+                """
+**Quick Chicken Curry**
+**Cuisine:** Indian
+**Course:** Main Dish
+**Time:** 30 minutes
+**Ingredients:**
+• 1 pound boneless, skinless chicken breasts, cut into 1-inch pieces
+• 2 tablespoons vegetable oil
+• 1 onion, diced
+• 3 cloves garlic, minced
+• 1 tablespoon ginger, minced
+• 2 tablespoons curry powder
+• 1 teaspoon ground cumin
+• 1 teaspoon ground coriander
+• 1/2 teaspoon turmeric
+• 1/2 teaspoon red pepper flakes
+• 1 (14 ounce) can coconut milk
+• 1 (14.5 ounce) can diced tomatoes
+• Salt and pepper to taste
+• Fresh cilantro for garnish
+"""
+            ]
+            
+            # Filter recipes based on preferences
+            filtered_recipes = []
+            for recipe in recipes:
+                if diet and diet.lower() == "vegetarian" and "chicken" in recipe.lower():
+                    continue
+                if cuisine and cuisine.lower() not in recipe.lower():
+                    continue
+                if ingredient and ingredient.lower() not in recipe.lower():
+                    continue
+                if exclude_ingredient and exclude_ingredient.lower() in recipe.lower():
+                    continue
+                filtered_recipes.append(recipe)
+            
+            if filtered_recipes:
+                dispatcher.utter_message(text=random.choice(filtered_recipes))
+            else:
+                dispatcher.utter_message(text="I couldn't find any recipes matching all your criteria. Try relaxing some constraints.")
+        else:
+            dispatcher.utter_message(text="I couldn't find any specific preferences. What kind of recipes are you looking for?")
+        
+        return []

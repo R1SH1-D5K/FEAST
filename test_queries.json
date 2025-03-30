@@ -1,0 +1,109 @@
+[
+  {
+    "text": "Show me vegetarian pasta recipes",
+    "expected_entities": [
+      {"entity": "diet", "value": "vegetarian"},
+      {"entity": "ingredient", "value": "pasta"}
+    ]
+  },
+  {
+    "text": "I want gluten-free Indian food",
+    "expected_entities": [
+      {"entity": "diet", "value": "gluten-free"},
+      {"entity": "cuisine", "value": "Indian"}
+    ]
+  },
+  {
+    "text": "Give me some vegan Mexican dishes",
+    "expected_entities": [
+      {"entity": "diet", "value": "vegan"},
+      {"entity": "cuisine", "value": "Mexican"}
+    ]
+  },
+  {
+    "text": "I'm looking for chicken recipes",
+    "expected_entities": [
+      {"entity": "ingredient", "value": "chicken"}
+    ]
+  },
+  {
+    "text": "What Italian desserts can I make?",
+    "expected_entities": [
+      {"entity": "cuisine", "value": "Italian"},
+      {"entity": "course", "value": "dessert"}
+    ]
+  },
+  {
+    "text": "Quick dinner ideas with rice",
+    "expected_entities": [
+      {"entity": "time", "value": "quick"},
+      {"entity": "course", "value": "dinner"},
+      {"entity": "ingredient", "value": "rice"}
+    ]
+  },
+  {
+    "text": "Dairy-free breakfast recipes",
+    "expected_entities": [
+      {"entity": "diet", "value": "dairy-free"},
+      {"entity": "course", "value": "breakfast"}
+    ]
+  },
+  {
+    "text": "Spicy Thai food without peanuts",
+    "expected_entities": [
+      {"entity": "cuisine", "value": "Thai"},
+      {"entity": "exclude_ingredient", "value": "peanuts"}
+    ]
+  },
+  {
+    "text": "Low-carb dinner ideas",
+    "expected_entities": [
+      {"entity": "diet", "value": "low-carb"},
+      {"entity": "course", "value": "dinner"}
+    ]
+  },
+  {
+    "text": "Vegetarian lasagna recipe",
+    "expected_entities": [
+      {"entity": "diet", "value": "vegetarian"},
+      {"entity": "ingredient", "value": "lasagna"}
+    ]
+  },
+  {
+    "text": "I need a quick pasta dish",
+    "expected_entities": [
+      {"entity": "time", "value": "quick"},
+      {"entity": "ingredient", "value": "pasta"}
+    ]
+  },
+  {
+    "text": "Show me Chinese vegetarian recipes",
+    "expected_entities": [
+      {"entity": "cuisine", "value": "Chinese"},
+      {"entity": "diet", "value": "vegetarian"}
+    ]
+  },
+  {
+    "text": "Recipes with tomatoes and basil",
+    "expected_entities": [
+      {"entity": "ingredient", "value": "tomatoes"},
+      {"entity": "ingredient", "value": "basil"}
+    ]
+  },
+  {
+    "text": "Gluten-free desserts without nuts",
+    "expected_entities": [
+      {"entity": "diet", "value": "gluten-free"},
+      {"entity": "course", "value": "dessert"},
+      {"entity": "exclude_ingredient", "value": "nuts"}
+    ]
+  },
+  {
+    "text": "Easy vegan breakfast ideas",
+    "expected_entities": [
+      {"entity": "time", "value": "easy"},
+      {"entity": "diet", "value": "vegan"},
+      {"entity": "course", "value": "breakfast"}
+    ]
+  }
+] 
