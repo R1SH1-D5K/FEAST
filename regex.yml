@@ -1,0 +1,17 @@
+version: "3.1"
+
+regex:
+  - name: ingredient
+    pattern: "\\b(chicken|beef|pork|fish|pasta|rice|tomato|potato|carrot|onion|garlic|cheese|tofu|beans|lentils|quinoa|salmon|tuna|shrimp|mushroom|eggplant|zucchini|spinach|kale|broccoli|cauliflower|pepper|avocado|banana|apple|orange|lemon|lime|berries|chocolate|flour|sugar|honey|yogurt|milk|cream|butter|oil|egg|nuts|seeds)\\b"
+  - name: cuisine
+    pattern: "\\b(Italian|Indian|Chinese|Mexican|Thai|Japanese|French|Greek|Spanish|Korean|Vietnamese|Middle Eastern|Mediterranean|American|Cajun|Caribbean|German|Brazilian|Turkish|Moroccan|Lebanese|Ethiopian|Russian|British|Irish)\\b"
+  - name: diet
+    pattern: "\\b(vegetarian|vegan|gluten-free|dairy-free|low-carb|keto|paleo|pescatarian|Mediterranean|low-FODMAP|whole30|high-protein|diabetic-friendly)\\b"
+  - name: course
+    pattern: "\\b(breakfast|lunch|dinner|dessert|appetizer|snack|side dish|soup|salad|brunch|main course|beverage|drink)\\b"
+  - name: time
+    pattern: "\\b(quick|easy|fast|simple|\\d+ minute|\\d+ hour|under \\d+ minutes|less than \\d+ minutes|no-cook|instant|rapid|speedy|swift|ready in)\\b"
+  - name: exclude_ingredient
+    pattern: "\\b(?:without|no|not|exclude|excluding|except|don't include|don't want|can't have|allergic to|avoid)\\s+([\\w\\s]+)\\b"
+  - name: taste
+    pattern: "\\b(spicy|sweet|savory|tangy|bitter|umami|sour|smoky|creamy|crispy|hearty|refreshing|comforting|zesty|rich|mild|hot|warm|cool|fresh)\\b" 

@@ -1,0 +1,347 @@
+pasta
+spaghetti
+linguine
+fettuccine
+penne
+lasagna
+macaroni
+ravioli
+tortellini
+gnocchi
+risotto
+pizza
+focaccia
+bruschetta
+ciabatta
+baguette
+croissant
+brioche
+sourdough
+rye
+wheat
+barley
+quinoa
+couscous
+bulgur
+rice
+basmati
+jasmine
+arborio
+sushi
+noodles
+ramen
+udon
+soba
+pho
+curry
+masala
+tikka
+tandoori
+biryani
+paella
+tapas
+gazpacho
+tortilla
+enchilada
+burrito
+taco
+quesadilla
+guacamole
+salsa
+hummus
+falafel
+tahini
+tzatziki
+pita
+kebab
+shawarma
+gyro
+moussaka
+spanakopita
+sushi
+sashimi
+tempura
+teriyaki
+miso
+tofu
+edamame
+kimchi
+bibimbap
+pad thai
+satay
+spring roll
+dim sum
+dumpling
+wonton
+chow mein
+lo mein
+goulash
+schnitzel
+bratwurst
+sauerkraut
+pierogi
+borscht
+stroganoff
+poutine
+maple syrup
+pancake
+waffle
+crepe
+oatmeal
+granola
+yogurt
+kefir
+cottage cheese
+ricotta
+mozzarella
+parmesan
+cheddar
+gouda
+brie
+camembert
+feta
+halloumi
+blue cheese
+goat cheese
+butter
+margarine
+olive oil
+coconut oil
+sesame oil
+vegetable oil
+canola oil
+sunflower oil
+peanut oil
+vinegar
+balsamic
+soy sauce
+fish sauce
+oyster sauce
+hoisin sauce
+sriracha
+tabasco
+ketchup
+mustard
+mayonnaise
+aioli
+pesto
+marinara
+bolognese
+alfredo
+bechamel
+hollandaise
+gravy
+broth
+stock
+bouillon
+consomme
+bisque
+chowder
+gumbo
+jambalaya
+paella
+pilaf
+risotto
+beef
+pork
+lamb
+veal
+chicken
+turkey
+duck
+goose
+quail
+pheasant
+venison
+rabbit
+bison
+salmon
+tuna
+cod
+halibut
+trout
+tilapia
+mackerel
+sardine
+anchovy
+shrimp
+prawn
+lobster
+crab
+clam
+mussel
+oyster
+scallop
+squid
+octopus
+tofu
+tempeh
+seitan
+lentil
+chickpea
+black bean
+kidney bean
+pinto bean
+navy bean
+fava bean
+edamame
+split pea
+mung bean
+adzuki bean
+lima bean
+garbanzo bean
+peanut
+almond
+cashew
+walnut
+pecan
+pistachio
+hazelnut
+macadamia
+pine nut
+chestnut
+sunflower seed
+pumpkin seed
+sesame seed
+flax seed
+chia seed
+hemp seed
+poppy seed
+caraway seed
+fennel seed
+cumin seed
+coriander seed
+mustard seed
+anise seed
+cardamom
+cinnamon
+clove
+nutmeg
+allspice
+ginger
+turmeric
+saffron
+paprika
+cayenne
+chili powder
+curry powder
+five spice
+herbes de provence
+za'atar
+sumac
+oregano
+basil
+thyme
+rosemary
+sage
+mint
+cilantro
+parsley
+dill
+chive
+tarragon
+marjoram
+bay leaf
+vanilla
+chocolate
+cocoa
+caramel
+honey
+maple syrup
+molasses
+agave
+stevia
+sugar
+brown sugar
+powdered sugar
+confectioners sugar
+cane sugar
+coconut sugar
+corn syrup
+apple
+orange
+banana
+strawberry
+blueberry
+raspberry
+blackberry
+cranberry
+grape
+watermelon
+cantaloupe
+honeydew
+pineapple
+mango
+papaya
+guava
+kiwi
+passion fruit
+dragon fruit
+lychee
+persimmon
+pomegranate
+fig
+date
+apricot
+peach
+plum
+nectarine
+cherry
+lemon
+lime
+grapefruit
+tangerine
+clementine
+mandarin
+kumquat
+avocado
+tomato
+potato
+sweet potato
+yam
+cassava
+taro
+carrot
+onion
+garlic
+shallot
+leek
+scallion
+celery
+bell pepper
+chili pepper
+jalapeno
+habanero
+serrano
+poblano
+anaheim
+cucumber
+zucchini
+squash
+pumpkin
+eggplant
+okra
+artichoke
+asparagus
+broccoli
+cauliflower
+brussels sprout
+cabbage
+kale
+spinach
+chard
+collard greens
+lettuce
+arugula
+radicchio
+endive
+watercress
+mushroom
+truffle
+seaweed
+nori
+wakame
+kombu
+dulse
+spirulina
+chlorella 
